@@ -1,24 +1,39 @@
+:root {
+  --bg-color: #f6f8fc;
+  --content-bg: #fff;
+  --text-primary: #000;
+  --text-secondary: #666;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --content-bg: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f6f8fc;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
 }
 
 .content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+  padding: 1rem;
+  background-color: var(--content-bg);
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
 }
 
 @media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
 }

@@ -60,7 +60,6 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos como:
 - HTML5
 - CSS3
 - JavaScript / TypeScript
-- Angular
 
 ---
 
